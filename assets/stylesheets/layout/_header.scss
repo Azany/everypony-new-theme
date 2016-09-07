@@ -12,24 +12,28 @@
 .ep-header-links {
   background-color: transparent;
   background-image: url("assets/img/bg-header.jpg");
-  
-
+  border-radius: 12px 12px 0px 0px;
 }
 
 .navbar-ep-main {
   position: relative;
   min-height: 50px;
+  padding-top: 10px;
   margin-bottom: 20px;
+  color: #cdcae9;
 
   .navbar-brand {
-    padding: 15px 0px;
+    color: #cdcae9;
+    padding: 10px 0px;
   }
   .navbar-brand:hover,
   .navbar-brand:focus {
     color: #fafae8;
     background-color: transparent;
   }
-
+  .navbar-nav > li > a {
+    color: #fafae8;
+  }
   .navbar-nav > li > a:hover,
   .navbar-nav > li > a:focus {
     color: #cdcae9;

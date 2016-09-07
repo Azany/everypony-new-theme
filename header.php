@@ -11,49 +11,84 @@
 
 <body <?php body_class(); ?>>
 <div class="container" role="main">
-    <div class="row ep-header-links">
-        <div class="row servicelinks">
-            <ul>
-                <li>День/Ночь</li>
-                <li>Спрятать пони</li>
-            </ul>
-        </div>
-        <nav class="navbar-ep-main" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">EveryPony.ru</a>
-                    <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas"
-                            data-target="#js-bootstrap-offcanvas" style="float:left;">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span>
+    <div class="ep-header">
+        <div class="row ep-header-links">
+            <div class="row servicelinks">
+                <ul>
+                    <li>День/Ночь</li>
+                    <li>Спрятать пони</li>
+                </ul>
+            </div>
+            <nav class="navbar-ep-main" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">EveryPony.ru</a>
+                        <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas"
+                                data-target="#js-bootstrap-offcanvas" style="float:left;">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                         </span>
-                    </button>
-                </div>
-                <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
-                    <ul class="nav navbar-nav">
-                        <li><a href="//forum.everypony.ru">Форум</a></li>
-                        <li><a href="//stories.everypony.ru">Рассказы</a></li>
-                        <li><a href="//wiki.everypony.ru">Вики</a></li>
-                        <li><a href="//tabun.everypony.ru">Табун</a></li>
-                        <li><a href="//minecraft.everypony.ru">Майнкрафт</a></li>
-                        <li><a href="//radio.everypony.ru">Радио</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <ul class="nav navbar-nav navbar-right hidden-sm">
-                            <li><a href="https://twitter.com/everypony_ru" target="_blank"><i class="fa fa-twitter"
-                                                                                              aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="<?php echo esc_url(home_url('/feed')); ?>" target="_blank"><i class="fa fa-rss"
-                                                                                                       aria-hidden="true"></i></a>
-                            </li>
+                        </button>
+                    </div>
+                    <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+                        <ul class="nav navbar-nav">
+                            <li><a href="//forum.everypony.ru">Форум</a></li>
+                            <li><a href="//stories.everypony.ru">Рассказы</a></li>
+                            <li><a href="//wiki.everypony.ru">Вики</a></li>
+                            <li><a href="//tabun.everypony.ru">Табун</a></li>
+                            <li><a href="//minecraft.everypony.ru">Майнкрафт</a></li>
+                            <li><a href="//radio.everypony.ru">Радио</a></li>
                         </ul>
-                    </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right hidden-sm">
+                                <li><a href="https://twitter.com/everypony_ru" target="_blank"><i class="fa fa-twitter"
+                                                                                                  aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="<?php echo esc_url(home_url('/feed')); ?>" target="_blank"><i
+                                            class="fa fa-rss"
+                                            aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+        <div class="art-gallery">
+        </div>
+            <nav class="navbar-ep-topics">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand ep-topics-brand">Рубрики:</a>
+                        <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas"
+                                data-target="#ep-topics" style="float:left;">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </span>
+                        </button>
+                    </div>
+                    <div class="navbar-offcanvas navbar-offcanvas-touch" id="ep-topics">
+                        <ul class="nav navbar-nav navbar-ep-topics">
+                            <li><a href="//everypony.ru/category/news">Новости</a></li>
+                            <li><a href="//everypony.ru/category/video">Видео</a></li>
+                            <li><a href="//everypony.ru/category/stories">Рассказы</a></li>
+                            <li><a href="//everypony.ru/category/images">Рисунки</a></li>
+                            <li><a href="//everypony.ru/category/comics">Комиксы</a></li>
+                            <li><a href="//everypony.ru/category/music">Музыка</a></li>
+                            <li><a href="//everypony.ru/category/games">Игры</a></li>
+                            <li><a href="//everypony.ru/category/crafts">Рукоделие</a></li>
+                            <li><a href="//everypony.ru/category/overviews">Обзоры</a></li>
+                            <li><a href="//everypony.ru/category/events">События</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
     </div>
 
 
