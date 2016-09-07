@@ -40,7 +40,7 @@ function everypony_new_setup() {
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
-	add_theme_support( 'post-thumbnails' );
+
 
 	add_image_size( 'everypony-new-featured-image', 640, 9999 );
 
@@ -139,9 +139,18 @@ add_action( 'widgets_init', 'everypony_new_widgets_init' );
  * Enqueue scripts and styles.
  */
 function everypony_new_scripts() {
-	wp_enqueue_style( 'everypony-new-style', get_stylesheet_uri() );
 
-    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
+
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css');
+
+    wp_enqueue_style( 'bootstrap-offcanvas', get_template_directory_uri() . '/assets/css/bootstrap.offcanvas.min.css');
+
+    wp_enqueue_style( 'everypony-new-style', get_stylesheet_uri() );
+
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '', true );
+
+    wp_enqueue_script( 'bootstrap-offcanvas-js', get_template_directory_uri() . '/assets/js/bootstrap.offcanvas.min.js', array('jquery'), '', true );
 
 	wp_enqueue_script( 'everypony-new-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 

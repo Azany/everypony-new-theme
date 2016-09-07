@@ -9,7 +9,15 @@ html {
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+    margin: 10px;
+	background: $color__background-body;
+    background-image: url("assets/img/body-bg.png");
+    background-attachment: fixed;
+}
+
+.container {
+  background-color: $color__background-container;
+  border-radius: 12px 12px 12px 12px;
 }
 
 @import "content-sidebar";
