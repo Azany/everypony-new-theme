@@ -10,8 +10,7 @@
 }
 
 .ep-header-links {
-  background-color: transparent;
-  background-image: url("assets/img/bg-header.jpg");
+  background: transparent url("assets/img/bg-header.jpg");
   border-radius: 12px 12px 0px 0px;
 }
 
@@ -19,7 +18,6 @@
   position: relative;
   min-height: 50px;
   padding-top: 10px;
-  margin-bottom: 20px;
   color: #cdcae9;
 
   .navbar-brand {
@@ -39,4 +37,35 @@
     color: #cdcae9;
     background-color: transparent;
   }
+}
+
+.ep-header-topics {
+  background: transparent url("assets/img/bg-topics.jpg");
+}
+
+.navbar-ep-topics {
+  position: relative;
+  color: #cdcae9;
+
+  .navbar-brand {
+    padding: 13px 0px;
+    color: #444;
+  }
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    color: #444;
+    background-color: transparent;
+  }
+  .navbar-nav > li > a {
+    color: #444;
+  }
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+
+.art-gallery{
+
 }
