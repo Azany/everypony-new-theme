@@ -1,6 +1,6 @@
 /*
 Theme Name: Everypony new
-Theme URI: Pony
+Theme URI: Pony.
 Author: Everypony.ru team
 Author URI: https://everypony.ru
 Description: Everypony blog theme based on Underscores and Bootstrap.
@@ -589,7 +589,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  margin: 10px;
   background: #eee;
   background-image: url("assets/img/body-bg.png");
   background-attachment: fixed; }
@@ -664,8 +663,7 @@ body {
   float: right; }
 
 .ep-header-links {
-  background-color: transparent;
-  background-image: url("assets/img/bg-header.jpg");
+  background: transparent url("assets/img/bg-header.jpg");
   border-radius: 12px 12px 0px 0px; }
 
 .navbar-ep-main {
@@ -687,6 +685,9 @@ body {
   .navbar-ep-main .navbar-nav > li > a:focus {
     color: #cdcae9;
     background-color: transparent; }
+
+.ep-header-topics {
+  background: transparent url("assets/img/bg-topics.jpg"); }
 
 /*--------------------------------------------------------------
 # Comments

@@ -10,8 +10,7 @@
 }
 
 .ep-header-links {
-  background-color: transparent;
-  background-image: url("assets/img/bg-header.jpg");
+  background: transparent url("assets/img/bg-header.jpg");
   border-radius: 12px 12px 0px 0px;
 }
 
@@ -39,4 +38,8 @@
     color: #cdcae9;
     background-color: transparent;
   }
+}
+
+.ep-header-topics{
+  background: transparent url("assets/img/bg-topics.jpg");
 }

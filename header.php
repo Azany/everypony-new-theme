@@ -44,12 +44,11 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <ul class="nav navbar-nav navbar-right hidden-sm">
-                                <li><a href="https://twitter.com/everypony_ru" target="_blank"><i class="fa fa-twitter"
-                                                                                                  aria-hidden="true"></i></a>
+                                <li><a href="https://twitter.com/everypony_ru" target="_blank">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 </li>
-                                <li><a href="<?php echo esc_url(home_url('/feed')); ?>" target="_blank"><i
-                                            class="fa fa-rss"
-                                            aria-hidden="true"></i></a>
+                                <li><a href="<?php echo esc_url(home_url('/feed')); ?>" target="_blank">
+                                        <i class="fa fa-rss" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </ul>
@@ -59,10 +58,11 @@
         </div>
         <div class="art-gallery">
         </div>
-            <nav class="navbar-ep-topics">
+        <div class="row ep-header-topics">
+            <nav class="navbar-ep-topics" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand ep-topics-brand">Рубрики:</a>
+                        <a class="navbar-brand">Рубрики:</a>
                         <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas"
                                 data-target="#ep-topics" style="float:left;">
                             <span class="sr-only">Toggle navigation</span>
@@ -74,7 +74,7 @@
                         </button>
                     </div>
                     <div class="navbar-offcanvas navbar-offcanvas-touch" id="ep-topics">
-                        <ul class="nav navbar-nav navbar-ep-topics">
+                        <ul class="nav navbar-nav">
                             <li><a href="//everypony.ru/category/news">Новости</a></li>
                             <li><a href="//everypony.ru/category/video">Видео</a></li>
                             <li><a href="//everypony.ru/category/stories">Рассказы</a></li>
@@ -89,6 +89,7 @@
                     </div>
                 </div>
             </nav>
+        </div>
     </div>
 
 
