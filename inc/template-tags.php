@@ -26,8 +26,8 @@ if (!function_exists('everypony_new_posted_on')) :
         );
 
         $posted_on = sprintf(
-            esc_html_x('%s', 'post date', 'everypony-new'),
-            '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
+            esc_html_x('Опубликовано %s', 'post date', 'everypony-new'),
+            '<span>' . $time_string . '</span>'
         );
 
         $byline = sprintf(
@@ -47,10 +47,10 @@ if (!function_exists('everypony_new_posted_on')) :
         edit_post_link(
             sprintf(
             /* translators: %s: Name of current post */
-                esc_html__(' Редактировать вот это %s', 'everypony-new'),
+                esc_html__('Редактировать вот это %s', 'everypony-new'),
                 the_title('<span class="screen-reader-text">"', '"</span>', false)
             ),
-            '<span class="edit-link">',
+            '<span class="edit-link"> ',
             '</span>'
         );
     }
@@ -65,15 +65,15 @@ if (!function_exists('everypony_new_entry_footer')) :
         // Hide category and tag text for pages.
         if ('post' === get_post_type()) {
 
-            if (!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
+            if (!post_password_required() && (comments_open() || get_comments_number())) {
                 echo '<span class="comments-link">';
-                comments_popup_link(esc_html__('Комментариев нет ', 'everypony-new'), esc_html__('1 комментарий ', 'everypony-new'), esc_html__('% комментариев ', 'everypony-new'));
+                comments_popup_link(esc_html__('Комментариев нет', 'everypony-new'), esc_html__('1 комментарий ', 'everypony-new'), esc_html__('% комментариев ', 'everypony-new'));
                 echo '</span>';
             }
             /* translators: used between list items, there is a space after the comma */
             $tags_list = get_the_tag_list('', esc_html__(', ', 'everypony-new'));
             if ($tags_list) {
-                printf('<span class="tags-links">' . esc_html__('| Метки: %1$s', 'everypony-new') . '</span>', $tags_list); // WPCS: XSS OK.
+                printf('<span class="tags-links"> ' . esc_html__('| Метки: %1$s', 'everypony-new') . '</span>', $tags_list); // WPCS: XSS OK.
             }
         }
 

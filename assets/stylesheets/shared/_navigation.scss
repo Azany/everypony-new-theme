@@ -20,3 +20,15 @@
 		width: 50%;
 	}
 }
+.menu-item {
+	background: url('assets/img/moon-icon.png') no-repeat scroll 0 1px transparent;
+	padding: 4px 0px 4px 0px;
+	margin: 6px auto;
+}
+.menu-item a {
+	margin: 0px 0px 0px 30px;
+}
+.widget_nav_menu ul {
+	list-style: none;
+	padding: 0;
+}
